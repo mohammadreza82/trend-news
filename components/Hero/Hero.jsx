@@ -7,8 +7,8 @@ const Hero = () => {
 
   return (
     <React.Fragment>
-        <section className="container py-5 ">
-          <div className=" gap-4 mx-auto grid grid-cols-4">
+        <section className="container py-5 mobile:px-0 px-[45px]">
+          <div className="container gap-4 mx-auto grid grid-cols-4">
 
             <div className="contentOne h-[452px] customlg:col-span-1 customlg:grid hidden rounded-2xl">
               <div className="relative flex items-end p-[10px]">

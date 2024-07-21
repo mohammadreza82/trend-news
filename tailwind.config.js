@@ -34,9 +34,8 @@ module.exports = {
         center: true,
         padding:{
           DEAFAULT:"1rem",
-          sm:"3rem",
-          mobile:"3rem",
-          md:"3rem",
+          mobile:"2rem",
+          md:"2rem",
           lg:"5rem",
           xl:"10rem"
         }
