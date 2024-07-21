@@ -106,54 +106,66 @@ export const postCards = [
   },
 ];
 
+import imgsrc1 from "../public/assets/NewPosts/NewPost1.jpg"
+import imgsrc2 from "../public/assets/NewPosts/NewPost2.jpg"
+import imgsrc3 from "../public/assets/NewPosts/NewPost3.jpg"
+import imgsrc4 from "../public/assets/NewPosts/NewPost4.jpg"
+import imgsrc5 from "../public/assets/NewPosts/NewPost5.jpg"
+import imgsrc6 from "../public/assets/NewPosts/NewPost6.jpg"
 
-// export const newPosts=[
-//   {
-//     imgSrc:,
-//     title:"12 Mobile UX Design Trends For 2018",
-//     explanation:"Things move quickly in the mobile app universe. To succeed in the field of mobile UX design, designers must have the foresight and prepare for new challenges around the corner",
-//     userAvatar:,
-//     header:"Jon Kantner",
-//     subHeader:"July 14 , 2022"
-//   },
-//   {
-//     imgSrc:,
-//     title:"No boat bottomfish: Jetty fishing on the Washington Coast  ",
-//     explanation:"Cast from the rocks to bring home fresh fish tacos in this iconic spring and summer fishery. — Are you looking to go fishing and bring home deliciou",
-//     userAvatar:,
-//     header:"Louis Hoebregts",
-//     subHeader:"July 13 , 2022"
-//   },
-//   {
-//     imgSrc:,
-//     title:"",
-//     explanation:"",
-//     userAvatar:,
-//     header:"",
-//     subHeader:""
-//   },
-//   {
-//     imgSrc:,
-//     title:"",
-//     explanation:"",
-//     userAvatar:,
-//     header:"",
-//     subHeader:""
-//   },
-//   {
-//     imgSrc:,
-//     title:"",
-//     explanation:"",
-//     userAvatar:,
-//     header:"",
-//     subHeader:""
-//   },
-//   {
-//     imgSrc:,
-//     title:"",
-//     explanation:"",
-//     userAvatar:,
-//     header:"",
-//     subHeader:""
-//   },
-// ]
+import userAvatar1 from "../public/assets/NewPosts/NewPost1e1.jpg"
+import userAvatar2 from "../public/assets/NewPosts/NewPost2e2.jpg"
+import userAvatar3 from "../public/assets/NewPosts/NewPost3e3.jpg"
+import userAvatar4 from "../public/assets/NewPosts/NewPost4e4.jpg"
+import userAvatar5 from "../public/assets/NewPosts/NewPost5e5.jpg"
+import userAvatar6 from "../public/assets/NewPosts/NewPost6e6.jpg"
+export const newPosts=[
+  {
+    imgSrc:imgsrc1,
+    title:"12 Mobile UX Design Trends For 2018",
+    explanation:"Things move quickly in the mobile app universe. To succeed in the field of...",
+    userAvatar:userAvatar1,
+    header:"Jon Kantner",
+    subHeader:"July 14 , 2022"
+  },
+  {
+    imgSrc:imgsrc2,
+    title:"No boat bottomfish: Jetty fishing on the...",
+    explanation:"Cast from the rocks to bring home fresh fish tacos in this iconic spring and summer fishery. — Are you...",
+    userAvatar:userAvatar2,
+    header:"Louis Hoebregts",
+    subHeader:"July 13 , 2022"
+  },
+  {
+    imgSrc:imgsrc3,
+    title:"What a Disabled Squirrel Taught Me About Life,...",
+    explanation:"Why it helps to know what it’s like, and the exquisite beauty of empathy These days, the wood patio area...",
+    userAvatar:userAvatar3,
+    header:"James",
+    subHeader:"July 12 , 2022"
+  },
+  {
+    imgSrc:imgsrc4,
+    title:"Becoming a Self-Driving Car & Machine Learning...",
+    explanation:"How I left my full-time job, studied at Udacity, and landed a job at BMW The past year has been quite...",
+    userAvatar:userAvatar4,
+    header:"Cassie Evans",
+    subHeader:"July 12 , 2022"
+  },
+  {
+    imgSrc:imgsrc5,
+    title:"How to Become a Master Designer",
+    explanation:"Many outsiders believe that designers are unicorns, gifted or special in some way. We have an innate...",
+    userAvatar:userAvatar5,
+    header:"Linda",
+    subHeader:"July 10 , 2022"
+  },
+  {
+    imgSrc:imgsrc6,
+    title:"This free course can teach you music...",
+    explanation:"A Berlin-based music software company, just released a free interactive music course that runs right in yo...",
+    userAvatar:userAvatar6,
+    header:"Patricia",
+    subHeader:"July 09 , 2022"
+  },
+]
