@@ -130,7 +130,7 @@ export const newPosts=[
   },
   {
     imgSrc:imgsrc2,
-    title:"No boat bottomfish: Jetty fishing on the...",
+    title:"No boat bottomfish: fishing on the...",
     explanation:"Cast from the rocks to bring home fresh fish tacos in this iconic spring and summer fishery. — Are you...",
     userAvatar:userAvatar2,
     header:"Louis Hoebregts",

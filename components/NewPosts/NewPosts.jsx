@@ -1,5 +1,9 @@
 import React from "react";
-import { HiChevronLeft, HiChevronRight, HiOutlineBookmark } from "react-icons/hi";
+import {
+  HiChevronLeft,
+  HiChevronRight,
+  HiOutlineBookmark,
+} from "react-icons/hi";
 import { newPosts } from "../../data/Index";
 import Image from "next/image";
 import newPost from "../../public/assets/NewPosts/NewPost1.jpg";
@@ -46,27 +50,27 @@ const NewPosts = () => {
               </div>
               <div className="p-3 ">
                 <div className="flex w-full justify-between items-center mt-2 px-4 me-4 py-[14px] bg-gray-100 rounded-xl">
-                 <div className="flex">
-                   <Image
-                    src={userAvatar}
-                    alt={"Jon Kantner"}
-                    className="w-11 h-11 rounded-xl"
-                  />
-                  <div className="ml-2 flex flex-col gap-1">
-                    <p className="text-sm leading-[22px] text-black-100">
-                      <p>Jon Kantner</p>
-                    </p>
-                    <p className="text-xs leading-[18px] text-black-100/75">
-                      <p>July 14 , 2022</p>
-                    </p>
-                  </div>
+                  <div className="flex">
+                    <Image
+                      src={userAvatar}
+                      alt={"Jon Kantner"}
+                      className="w-11 h-11 rounded-xl"
+                    />
+                    <div className="ml-2 flex flex-col gap-1">
+                      <p className="text-sm leading-[22px] text-black-100">
+                        <p>Jon Kantner</p>
+                      </p>
+                      <p className="text-xs leading-[18px] text-black-100/75">
+                        <p>July 14 , 2022</p>
+                      </p>
+                    </div>
                   </div>
                   {/* BookMark */}
-                <div>
-                <div className="rounded-xl text-black-100/75 flex justify-center items-center text-xl">
-                <HiOutlineBookmark />
-              </div>
-                </div>
+                  <div>
+                    <div className="rounded-xl text-black-100/75 flex justify-center items-center text-xl">
+                      <HiOutlineBookmark />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -82,24 +86,24 @@ const NewPosts = () => {
               }) => (
                 <div
                   key={index}
-                  className="col-span-1 mobile:flex hidden justify-center items-center h-[210px] rounded-xl hover:shadow-normal shadow-md transition-all duration-300 ease-linear "
+                  className="col-span-1 mobile:flex hidden justify-center items-center  rounded-xl hover:shadow-normal shadow-md transition-all duration-300 ease-linear"
                 >
-                  <div className="p-3 w-[100%]">
+                  <div className="w-full h-full flex items-center p-3">
                     <Image
                       src={imgSrc}
                       alt={title}
                       width={340}
-                      className="h-[190px] object-cover rounded-xl"
+                     
+                      className="w-full h-[190px] object-cover rounded-xl"
                     />
                   </div>
-                  <div>
+                  <div className="p-3 w-full">
                     <div className="flex flex-col gap-4">
                       <h2 className="text-base font-medium">{title}</h2>
                       <p className="text-sm">{explanation}</p>
                     </div>
-                    <div>
-                      <div className="flex items-center justify-between mt-2 px-4 me-4 py-[14px] bg-gray-100 rounded-xl">
-                        <div className="flex ">
+                    <div className="flex items-center justify-between mt-2 px-4 me-4 py-[14px] bg-gray-100 rounded-xl">
+                      <div className="flex items-center">
                         <Image
                           src={userAvatar}
                           alt={header}
@@ -113,10 +117,9 @@ const NewPosts = () => {
                             {subHeader}
                           </p>
                         </div>
-                        </div>
-                        <div className="rounded-xl text-black-100/75 flex justify-center items-center text-xl">
-                <HiOutlineBookmark />
-              </div>
+                      </div>
+                      <div className="rounded-xl text-black-100/75 flex justify-center items-center text-xl">
+                        <HiOutlineBookmark />
                       </div>
                     </div>
                   </div>
