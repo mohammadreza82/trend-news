@@ -32,12 +32,12 @@ module.exports = {
       },
       container: {
         center: true,
-        padding:{
-          DEAFAULT:"1rem",
-          mobile:"2rem",
-          md:"2rem",
-          lg:"5rem",
-          xl:"10rem"
+        padding: {
+          DEAFAULT: "1rem",
+          mobile: "2rem",
+          md: "2rem",
+          lg: "5rem",
+          xl: "10rem"
         }
       },
       boxShadow: {
@@ -53,7 +53,7 @@ module.exports = {
       },
       fontFamily: {
         "Robot": "Robot",
-    
+
       },
     },
   },
