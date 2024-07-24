@@ -28,20 +28,43 @@ const Nav = () => {
             {/* NavLinks */}
             <div>
               <ul className="flex justify-evenly lg:gap-4 gap-2">
-                {navItems.map(({ index, name, link, icon }) => (
-                  <li key={index}>
-                    {icon ? (
-                      <Link href={link} className="flex items-center">
-                        <p>{name}</p>
-                        <p className="text-black-100/50 text-xl">{icon}</p>
-                      </Link>
-                    ) : (
-                      <Link href={link} className="flex items-center">
-                        <p>{name}</p>
-                      </Link>
-                    )}
-                  </li>
-                ))}
+                {navItems.map(
+                  ({ index, name, link, icon, dropdown, dropdownLinks }) => (
+                    <li key={index}>
+                      {icon && dropdown ? (
+                        <div className="group relative cursor-pointer">
+                          <Link href={link} className="flex items-center">
+                            <p>{name}</p>
+                            <p className="text-black-100/50 text-xl transition-all duration-300">
+                              {icon}
+                            </p>
+                          </Link>
+                          <div className="absolute z-10 hidden group-hover:block w-[200px] rounded-md bg-white p-2  text-black shadow-md">
+                            <ul>
+                              {dropdownLinks.map(({ id, name, link }) => (
+                                <li key={id}>
+                                  <Link
+                                    href={link}
+                                    className="inline-block w-full hover:bg-gray-100 rounded-md p-2 hover:bg-primary-light/20 "
+                                  >
+                                    <p className="relative z-20 flex items-center">
+                                      <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
+                                      {name}
+                                    </p>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      ) : (
+                        <Link href={link} className="flex items-center">
+                          <p>{name}</p>
+                        </Link>
+                      )}
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           </div>
@@ -133,36 +156,61 @@ const Nav = () => {
                       </div>
                       <nav className="mt-8">
                         <ul className="flex flex-col gap-4">
-                          {navItems.map(({ index, name, link, iconMobile }) => (
-                            <li
-                              key={index}
-                              className="group hover:bg-gray-100 hover:p-4 hover:rounded-xl transition-all duration-300 ease-linear"
-                            >
-                              {iconMobile ? (
-                                <div>
+                          {navItems.map(
+                            ({
+                              index,
+                              name,
+                              link,
+                              iconMobile,
+                              dropdown,
+                              dropdownLinks,
+                            }) => (
+                              <li
+                                key={index}
+                                className="group hover:bg-gray-100 hover:p-4 hover:rounded-xl transition-all duration-300 ease-linear"
+                              >
+                                {iconMobile && dropdown ? (
+                                  <div>
+                                    <Link
+                                      href={link}
+                                      className="flex items-center justify-between"
+                                    >
+                                      <p className="relative z-10 flex items-center">
+                                        <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
+                                        {name}
+                                      </p>
+                                      <p className="text-black-100/50 text-xl transform transition-transform duration-300 ease-linear group-hover:rotate-90">
+                                        {iconMobile}
+                                      </p>
+                                    </Link>
+                                    {dropdownLinks.map(({ id, name, link }) => (
+                                      <li
+                                        key={id}
+                                        className="group hidden group-hover:block mt-1"
+                                      >
+                                        <Link
+                                          href={link}
+                                          className="inline-block w-full rounded-md p-2 hover:bg-primary-light/20 transition-transform duration-300 ease-linear"
+                                        >
+                                          {name}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </div>
+                                ) : (
                                   <Link
                                     href={link}
-                                    className="flex items-center justify-between"
+                                    className="flex items-center"
                                   >
                                     <p className="relative z-10 flex items-center">
                                       <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
                                       {name}
                                     </p>
-                                    <p className="text-black-100/50 text-xl transform transition-transform duration-300 ease-linear group-hover:rotate-90">
-                                      {iconMobile}
-                                    </p>
                                   </Link>
-                                </div>
-                              ) : (
-                                <Link href={link} className="flex items-center">
-                                  <p className="relative z-10 flex items-center">
-                                    <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
-                                    {name}
-                                  </p>
-                                </Link>
-                              )}
-                            </li>
-                          ))}
+                                )}
+                              </li>
+                            )
+                          )}
                         </ul>
                       </nav>
                     </div>
@@ -252,35 +300,51 @@ const Nav = () => {
                   </div>
                   <nav className="mt-8">
                     <ul className="flex flex-col gap-4">
-                      {navItems.map(({ index, name, link, iconMobile }) => (
-                        <li
-                          key={index}
-                          className="group hover:bg-gray-100 hover:p-4 hover:rounded-xl transition-all duration-300 ease-linear"
-                        >
-                          {iconMobile ? (
-                            <div>
-                              <Link
-                                href={link}
-                                className="flex items-center justify-between"
-                              >
-                                <p className="relative z-10 flex items-center">
-                                  <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
-                                  {name}
-                                </p>
-                                <p className="text-black-100/50 text-xl transform transition-transform duration-300 ease-linear group-hover:rotate-90">
-                                  {iconMobile}
-                                </p>
-                              </Link>
-                            </div>
-                          ) : (
-                            <Link href={link} className="flex items-center">
-                              <p className="relative z-10 flex items-center">
-                                <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
-                                {name}
-                              </p>
-                            </Link>
-                          )}
-                        </li>
+                      {navItems.map(({ index, name, link, iconMobile,dropdown, dropdownLinks}) => (
+                       <li
+                       key={index}
+                       className="group hover:bg-gray-100 hover:p-4 hover:rounded-xl transition-all duration-300 ease-linear"
+                     >
+                       {iconMobile && dropdown ? (
+                         <div>
+                           <Link
+                             href={link}
+                             className="flex items-center justify-between"
+                           >
+                             <p className="relative z-10 flex items-center">
+                               <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
+                               {name}
+                             </p>
+                             <p className="text-black-100/50 text-xl transform transition-transform duration-300 ease-linear group-hover:rotate-90">
+                               {iconMobile}
+                             </p>
+                           </Link>
+                           {dropdownLinks.map(({ id, name, link }) => (
+                             <li
+                               key={id}
+                               className="group hidden group-hover:block mt-1"
+                             >
+                               <Link
+                                 href={link}
+                                 className="inline-block w-full rounded-md p-2 hover:bg-primary-light/20 transition-transform duration-300 ease-linear"
+                               >
+                                 {name}
+                               </Link>
+                             </li>
+                           ))}
+                         </div>
+                       ) : (
+                         <Link
+                           href={link}
+                           className="flex items-center"
+                         >
+                           <p className="relative z-10 flex items-center">
+                             <span className="h-[10px] absolute -left-2 top-2 bottom-0 w-1 bg-red-500 rounded-xl transition-transform duration-300 ease-linear transform scale-y-0 group-hover:scale-y-100 origin-top"></span>
+                             {name}
+                           </p>
+                         </Link>
+                       )}
+                     </li>
                       ))}
                     </ul>
                   </nav>

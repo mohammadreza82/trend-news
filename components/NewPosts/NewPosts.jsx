@@ -11,7 +11,7 @@ import userAvatar from "../../public/assets/NewPosts/NewPost1e1.jpg";
 const NewPosts = () => {
   return (
     <React.Fragment>
-      <div className="container pt-[70px] pb-[30px] mobile:px-0 px-[45px]">
+      <div className="container mt-[70px] mb-[30px] mobile:px-0 px-[45px]">
         <div className="container mx-auto">
           <div className="flex justify-between mx-auto mb-[30px]">
             <div className="relative flex items-center">
@@ -99,8 +99,8 @@ const NewPosts = () => {
                   </div>
                   <div className="p-3 w-full">
                     <div className="flex flex-col gap-4">
-                      <h2 className="text-base font-medium">{title}</h2>
-                      <p className="text-sm">{explanation}</p>
+                      <h2 className="text-base font-medium line-clamp-1">{title}</h2>
+                      <p className="text-sm line-clamp-2">{explanation}</p>
                     </div>
                     <div className="flex items-center justify-between mt-2 px-4 me-4 py-[14px] bg-gray-100 rounded-xl">
                       <div className="flex items-center">

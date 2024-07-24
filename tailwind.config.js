@@ -48,7 +48,7 @@ module.exports = {
         sm: "640px",
         md: "800px",
         lg: "1024px",
-        customlg: "1200px",
+        customlg: "1300px",
         xl: "1280px",
       },
       fontFamily: {

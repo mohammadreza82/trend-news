@@ -4,7 +4,7 @@ import Nav from "../../components/Nav/Nav";
 import NewPosts from "../../components/NewPosts/NewPosts";
 import Popularposts from "../../components/PopularPosts/Popularposts";
 import TopTags from "../../components/TopTags/TopTags";
-import Papularposts from "../../components/PapularPosts/Papularposts";
+import TrendyPosts from "../../components/TrendyPosts/TrendyPosts";
 
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
     <Hero/>
     <Popularposts />
     <NewPosts />
+    <TrendyPosts/>
    </div>
   );
 }
