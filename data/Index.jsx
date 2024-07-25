@@ -203,6 +203,47 @@ export const newPosts = [
   },
 ];
 
+export const latestVideo=[
+  {
+    title:"How Music Affects Your Brain (Plus 11 Artists To Listen To At Work)",
+    explanation:"You’ve read all your free member-only stories, become a member to get unlimited access. Your membership fee supports the voices you want to hear more from."
+  }
+]
+
+import Latest2 from '@/../../public/assets/Latest/Latest2.jpg'
+import Latest3 from '@/../../public/assets/Latest/Latest3.jpg'
+import Latest4 from '@/../../public/assets/Latest/Latest4.jpg'
+import Latest5 from '@/../../public/assets/Latest/Latest5.jpg'
+export const latestBoxes  =[
+  {
+    imgSrc:Latest2,
+    title:"5 reasons why you should wrap your hands when boxing",
+    explanation:"So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
+  },
+  {
+    imgSrc:Latest3,
+    title:"Music Genre Classification with Python",
+    explanation:"A Guide to analyzing Audio/Music signals in Python — Music is like a mirror, and it tells people a lot about who you are and what you care about, whether you like it or not. You’ve read all your free memberonly stories, become a member to get unlimited access. Your membership fee supports the voices you want to hear more from."
+  },
+  {
+    imgSrc:Latest4,
+    title:"Title",
+    explanation:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet"
+  },
+  {
+    imgSrc:Latest5,
+    title:"Title",
+    explanation:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet"
+  },
+]
+
+
+
+
+
+
+
+
 import trendy1 from "../public/assets/TrendyPosts/Trendy1.jpg";
 import trendy2 from "../public/assets/TrendyPosts/Trendy2.jpg";
 import trendy3 from "../public/assets/TrendyPosts/Trendy3.jpg";

@@ -5,6 +5,7 @@ import NewPosts from "../../components/NewPosts/NewPosts";
 import Popularposts from "../../components/PopularPosts/Popularposts";
 import TopTags from "../../components/TopTags/TopTags";
 import TrendyPosts from "../../components/TrendyPosts/TrendyPosts";
+import LatestVideo from "../../components/LatestVideo/LatestVideo";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <Hero/>
     <Popularposts />
     <NewPosts />
+    <LatestVideo/>
     <TrendyPosts/>
    </div>
   );

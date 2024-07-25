@@ -32,7 +32,7 @@ function TrendyPosts() {
   };
 
   return (
-    <div className='container mt-[60px] mb-[40px]  mobile:px-0 px-[45px]'>
+    <div className='container mt-[60px] mb-[40px]'>
 
         {/* Title & Navigation btn */}
         <div className='flex justify-between'>

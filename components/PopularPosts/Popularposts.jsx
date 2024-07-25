@@ -114,7 +114,7 @@ function Popularposts() {
   };
 
   return (
-    <div className="container mt-[60px] mb-[70px]  mobile:px-0 px-[45px]">
+    <div className="container mt-[60px] mb-[70px] mobile:mx-0 mx-[45px] ">
       {/* Title & Navigation btn */}
       <div className="flex justify-between">
         <div className="relative flex items-center">
@@ -181,7 +181,6 @@ function Popularposts() {
             setIsBeginning(swiper.isBeginning);
             setIsEnd(swiper.isEnd);
           }}
-          className="w-full"
         >
           {posts.map((post, index) => (
             <SwiperSlide key={index}>

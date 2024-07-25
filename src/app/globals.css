@@ -19,7 +19,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  object-fit: contain;
 }
 .contentOne{
   background-image: url(../../public/assets/content-slider1.jpg);
@@ -34,7 +34,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
+.Latest_Video{
+  background-image: url(../../public/assets/Latest/Latest1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
