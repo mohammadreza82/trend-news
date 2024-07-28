@@ -58,10 +58,10 @@ const NewPosts = () => {
                     />
                     <div className="ml-2 flex flex-col gap-1">
                       <p className="text-sm leading-[22px] text-black-100">
-                        <p>Jon Kantner</p>
+                        Jon Kantner
                       </p>
                       <p className="text-xs leading-[18px] text-black-100/75">
-                        <p>July 14 , 2022</p>
+                        July 14 , 2022
                       </p>
                     </div>
                   </div>

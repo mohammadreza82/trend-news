@@ -94,42 +94,89 @@ export const slider = [
   },
 ];
 
-export const postCards = [
+import Imgsrc1 from "../public/assets/PopularPosts/one.jpg";
+import Imgsrc2 from "../public/assets/PopularPosts/two.jpg";
+import Imgsrc3 from "../public/assets/PopularPosts/three.jpg";
+import Imgsrc4 from "../public/assets/PopularPosts/four.jpg";
+
+// import userAvatars1 from "../../public/assets/NewPosts/NewPost1e1.jpg";
+// import userAvatars2 from "../../public/assets/NewPosts/NewPost2e2.jpg";
+// import userAvatars3 from "../../public/assets/NewPosts/NewPost3e3.jpg";
+// new
+
+
+export const posts = [
   {
-    img: "/",
+    imgSrc: Imgsrc1,
+    title: "Opening Day of Boating Season",
+    explanation:
+      "Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge",
+    userAvatar: userAvatar3,
+    header: "James",
+    subHeader: "August 18 , 2022",
+  },
+  {
+    imgSrc: Imgsrc2,
+    title: "How to choose the right laptop",
+    explanation:
+      "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
+    userAvatar: userAvatar2,
+    header: "Louis Hoebregts",
+    subHeader: "July 13 , 2022",
+  },
+  {
+    imgSrc: Imgsrc3,
+    title: "How we built the self-driving car",
+    explanation:
+      "Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when",
+    userAvatar: userAvatar7,
+    header: "Mari",
+    subHeader: "July 14 , 2022",
+  },
+  {
+    imgSrc: Imgsrc4,
     title: "How to Persuade Your Parents to Buy Fast Food",
     explanation:
       "Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.",
-    profileImg: "/",
+    userAvatar: userAvatar1,
     header: "Jon Kantner",
-    subhead: "May 10 , 2022",
+    subHeader: "May 10 , 2022",
   },
   {
-    img: "/",
-    title: "How we built the first real self-driving car",
-    explanation:
-      "Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when",
-    profileImg: "/",
-    header: "Mary",
-    subhead: "July 14 , 2022",
-  },
-  {
-    img: "/",
-    title: "How to choose the right laptop for programming",
-    explanation:
-      "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
-    profileImg: "/",
-    header: "Louis Hoebregts",
-    subhead: "July 25 , 2022",
-  },
-  {
-    img: "/",
-    title: "Opening Day of Boating Season, Seattle WA",
+    imgSrc: Imgsrc1,
+    title: "Opening Day of Boating Season",
     explanation:
       "Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge",
-    profileImg: "/",
+    userAvatar: userAvatar3,
     header: "James",
-    subhead: "August 18 , 2022",
+    subHeader: "August 18 , 2022",
+  },
+  {
+    imgSrc: Imgsrc2,
+    title: "How to choose the right laptop",
+    explanation:
+      "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
+    userAvatar: userAvatar2,
+    header: "Louis Hoebregts",
+    subHeader: "July 13 , 2022",
+  },
+  {
+    imgSrc: Imgsrc3,
+    title: "How we built the self-driving car",
+    explanation:
+      "Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when",
+    userAvatar: userAvatar7,
+    header: "Mari",
+    subHeader: "July 14 , 2022",
+  },
+  {
+    imgSrc: Imgsrc4,
+    title: "How to Persuade Your Parents to Buy Fast Food",
+    explanation:
+      "Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.",
+    userAvatar: userAvatar1,
+    header: "Jon Kantner",
+    subHeader: "May 10 , 2022",
   },
 ];
 
@@ -146,6 +193,7 @@ import userAvatar3 from "../public/assets/NewPosts/NewPost3e3.jpg";
 import userAvatar4 from "../public/assets/NewPosts/NewPost4e4.jpg";
 import userAvatar5 from "../public/assets/NewPosts/NewPost5e5.jpg";
 import userAvatar6 from "../public/assets/NewPosts/NewPost6e6.jpg";
+import userAvatar7 from "../public/assets/NewPost7e7.jpg";
 export const newPosts = [
   {
     imgSrc: imgsrc1,
@@ -237,13 +285,6 @@ export const latestBoxes  =[
   },
 ]
 
-
-
-
-
-
-
-
 import trendy1 from "../public/assets/TrendyPosts/Trendy1.jpg";
 import trendy2 from "../public/assets/TrendyPosts/Trendy2.jpg";
 import trendy3 from "../public/assets/TrendyPosts/Trendy3.jpg";
@@ -293,6 +334,60 @@ export const trendyPosts = [
       "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
     userAvatar: userAvatar4,
     header: "Robert",
+    subHeader: "July 14 , 2022",
+  },
+];
+
+
+import TopPost1 from "../public/assets/TopPosts/TopPost1.jpg";
+import TopPost2 from "../public/assets/TopPosts/TopPost2.jpg";
+import TopPost3 from "../public/assets/TopPosts/TopPost3.jpg";
+import TopPost4 from "../public/assets/TopPosts/TopPost4.jpg";
+export const topPosts = [
+  {
+    imgSrc: TopPost4,
+    title: "House boating on Lake Shasta",
+    explanation:
+      "The best way to spend a long 4th of July weekend. Wake boarding, swimming, barbecues, and bonfires.",
+    userAvatar: userAvatar1,
+    header: "Mary",
+    subHeader: "July 14 , 2022",
+  },
+  {
+    imgSrc: TopPost3,
+    title: "How to choose the right laptop for programming",
+    explanation:
+      "What we’re told we must do each day to develop and be successful has gone out of control. We have endless lists of habits that we’re supposed to do",
+    userAvatar: userAvatar5,
+    header: "James",
+    subHeader: "July 14 , 2022",
+  },
+  {
+    imgSrc: TopPost2,
+    title:
+      "Why Buying a New Car Makes More Sense than Buying Used",
+    explanation:
+      "Many experts will tell you buying cars used is best for your long-term financial health. Here’s why they’re (mostly) wrong",
+    userAvatar: userAvatar3,
+    header: "Patricia",
+    subHeader: "July 14 , 2022",
+  },
+  {
+    imgSrc: TopPost1,
+    title: "Lasagna is but a Pasta Cake",
+    explanation:
+      "Re-envision the description of a common food from a different perspective — it is … pasta cake layered with cheese, meat, pasta repeated, bake and serve. ",
+    userAvatar: userAvatar4,
+    header: "Robert",
+    subHeader: "July 14 , 2022",
+  },
+  {
+    imgSrc: TopPost2,
+    title: "10 Cooking Lessons to Use in Everyday Life",
+    explanation:
+      "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
+    userAvatar: userAvatar2,
+    header: "Linda",
     subHeader: "July 14 , 2022",
   },
 ];

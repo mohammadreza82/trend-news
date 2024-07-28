@@ -183,6 +183,7 @@ const Nav = () => {
                                         {iconMobile}
                                       </p>
                                     </Link>
+                                    <ul>
                                     {dropdownLinks.map(({ id, name, link }) => (
                                       <li
                                         key={id}
@@ -196,6 +197,7 @@ const Nav = () => {
                                         </Link>
                                       </li>
                                     ))}
+                                    </ul>
                                   </div>
                                 ) : (
                                   <Link
@@ -319,6 +321,7 @@ const Nav = () => {
                                {iconMobile}
                              </p>
                            </Link>
+                           <ul>
                            {dropdownLinks.map(({ id, name, link }) => (
                              <li
                                key={id}
@@ -332,6 +335,7 @@ const Nav = () => {
                                </Link>
                              </li>
                            ))}
+                           </ul>
                          </div>
                        ) : (
                          <Link
