@@ -11,7 +11,7 @@ const Loading = () => {
           <p className="text-[50px] text-secondary-100 font-Robot font-bold leading-[22px]">
             MEGA.news
           </p>
-          <progress className="progress w-56"></progress>
+
           <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
             <div
               class="bg-secondary-100 h-2.5 rounded-full"
