@@ -146,7 +146,10 @@ function SliderSection(props) {
         </Swiper>
       </div>
     </div>
+<<<<<<< HEAD
     
+=======
+>>>>>>> b7bf1ad8d21da983f220c92e4f0734b7d03d13bc
   );
 }
 
