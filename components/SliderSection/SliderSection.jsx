@@ -12,7 +12,7 @@ SwiperCore.use([Navigation, Autoplay]);
 
 
 function SliderSection(props) {
-    const {posts,latestVideo,text}=props
+  const { posts, latestVideo, text } = props
   const swiperRef = useRef(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
@@ -30,32 +30,31 @@ function SliderSection(props) {
   };
 
   return (
-    <div className="container mt-[60px] mb-[70px] ">
+    <div className="container mt-[60px] mb-[70px] mobile:mx-0 mx-[45px] ">
       {/* Title & Navigation btn */}
       <div className="flex justify-between">
-        <div className="relative flex items-center">
-          <span className="h-[10px] z-10 absolute -left-2 w-1 bg-red-500 rounded-xl "></span>
+        <div className="relative flex items-center gap-1">
+          <span className="h-[10px] z-10 w-1 bg-red-500 rounded-xl "></span>
           <p className="text-xl leading-[23px] cursor-pointer">{text}</p>
         </div>
         <div className="flex gap-x-5">
+          {/* Left-Prev slide */}
           <button
             onClick={slidePrev}
             disabled={isBeginning}
-            className={`flex items-center justify-center w-10 h-10 rounded-xl ${
-              isBeginning ? "text-black-100/50" : "text-black-100"
-            } bg-gray-100 transition-all`}
+            className={`flex items-center justify-center w-10 h-10 rounded-xl ${isBeginning ? "text-black-100/50" : "text-black-100"
+              } bg-gray-100 transition-all`}
           >
             <div className="w-6 h-6">
               <ChevronLeftIcon />
             </div>
           </button>
+          {/* Right-Next slide */}
           <button
-          // HiChevronLeft
             onClick={slideNext}
             disabled={isEnd}
-            className={`flex items-center justify-center w-10 h-10 rounded-xl ${
-              isEnd ? "text-black-100/50" : "text-black-100 "
-            } bg-gray-100 transition-all`}
+            className={`flex items-center justify-center w-10 h-10 rounded-xl ${isEnd ? "text-black-100/50" : "text-black-100 "
+              } bg-gray-100 transition-all`}
           >
             <div className="w-6 h-6">
               <ChevronRightIcon />
@@ -65,7 +64,7 @@ function SliderSection(props) {
       </div>
       {/* Slider */}
       <div className="flex gap-5">
-        <Swiper
+         <Swiper
           ref={swiperRef}
           spaceBetween={14}
           slidesPerView={2}
@@ -98,9 +97,9 @@ function SliderSection(props) {
             setIsEnd(swiper.isEnd);
           }}
         >
-       {posts.map(({imgSrc,title,explanation,userAvatar,header,subHeader, index}) => (
+          {posts.map(({ imgSrc, title, explanation, userAvatar, header, subHeader, index }) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-1 flex-col items-center gap-y-4 p-3 rounded-2xl my-[30px] hover:shadow-normal shadow-md transition-all duration-300 ease-linear">
+              <div className="flex flex-1 flex-col items-center gap-y-4 p-3 rounded-2xl my-[30px] shadow-normal  transition-all duration-300 ease-linear">
                 {/* Image */}
                 <Image
                   src={imgSrc}
@@ -147,6 +146,7 @@ function SliderSection(props) {
         </Swiper>
       </div>
     </div>
+    </section>
   );
 }
 

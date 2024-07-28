@@ -38,8 +38,9 @@ module.exports = {
           md: "2rem",
           lg: "5rem",
           xl: "10rem"
-        }
+        },
       },
+  
       boxShadow: {
         normal: "0px 0px 32px rgba(0, 0, 0, 0.07)",
       },
@@ -48,8 +49,8 @@ module.exports = {
         sm: "640px",
         md: "800px",
         lg: "1024px",
-        customlg: "1300px",
         xl: "1280px",
+        customlg: "1300px",
       },
       fontFamily: {
         "Robot": "Robot",
