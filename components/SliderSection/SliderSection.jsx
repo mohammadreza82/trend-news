@@ -30,7 +30,7 @@ function SliderSection(props) {
   };
 
   return (
-    <div className="container mt-[60px] mb-[70px] mobile:mx-0 mx-[45px] ">
+    <div className="container mt-[60px] mb-[70px]  ">
       {/* Title & Navigation btn */}
       <div className="flex justify-between">
         <div className="relative flex items-center gap-1">
@@ -146,10 +146,7 @@ function SliderSection(props) {
         </Swiper>
       </div>
     </div>
-<<<<<<< HEAD
     
-=======
->>>>>>> b7bf1ad8d21da983f220c92e4f0734b7d03d13bc
   );
 }
 
