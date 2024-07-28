@@ -11,7 +11,7 @@ import userAvatar from "../../public/assets/NewPosts/NewPost1e1.jpg";
 const NewPosts = () => {
   return (
     <React.Fragment>
-      <div className="container mt-[70px] mb-[30px] mobile:px-0 px-[45px]">
+      <div className="container mt-[70px] mb-[30px]">
         <div className="container mx-auto">
           <div className="flex justify-between mx-auto mb-[30px]">
             <div className="relative flex items-center">

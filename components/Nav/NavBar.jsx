@@ -15,7 +15,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <React.Fragment>
-      <nav className=" py-11 ">
+      <nav className=" md:py-11 py-[25px] md:shadow-none shadow-xl">
         <div className="container flex  justify-between items-center  mx-auto">
           {/* LeftSide */}
           <div className="flex items-center lg:gap-[60px] gap-[20px]">
@@ -206,7 +206,7 @@ const NavBar = () => {
             </div>
           </div>
            {/* SearchBar */}
-         <div className="container w-full py-4 sm:hidden flex">
+         <div className="container w-full sm:py-4 sm:hidden flex">
             <div className="relative w-full">
               <div className="absolute inset-y-0 start-4 flex items-center pointer-events-none">
                 <HiDotsVertical
