@@ -21,7 +21,7 @@ const Nav = () => {
           <div className="flex items-center lg:gap-[60px] gap-[20px]">
             {/* Logo */}
             <div>
-              <p className="text-[22px] text-secondary-100 font-Robot font-bold leading-[22px]">
+              <p className="text-[22px] text-secondary-100 font-bold leading-[22px]">
                 MEGA.news
               </p>
             </div>
