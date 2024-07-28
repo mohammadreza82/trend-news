@@ -146,7 +146,6 @@ function SliderSection(props) {
         </Swiper>
       </div>
     </div>
-    </section>
   );
 }
 
