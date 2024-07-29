@@ -15,7 +15,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <React.Fragment>
-      <nav className=" py-11 ">
+      <nav className=" md:py-11 py-7 md:shadow-none shadow-lg">
         <div className="container flex  justify-between items-center  mx-auto">
           {/* LeftSide */}
           <div className="flex items-center lg:gap-[60px] gap-[20px]">

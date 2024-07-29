@@ -43,7 +43,7 @@ const Hero = () => {
               <div className="bg-white/75 rounded-xl flex flex-col gap-[8px] px-[16px] py-[16px]">
                 <p className="text-lg font-normal">How to Make Dance Music</p>
                 <p className="text-sm font-normal line-clamp-2">
-                  Download from verified or trusted uploaders. If you're a
+                  Download from verified or trusted uploaders. If youre a
                   BitTorrent user looking...
                 </p>
               </div>
