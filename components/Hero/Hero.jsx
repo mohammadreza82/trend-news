@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <React.Fragment>
-      <section className="hero mobile:flex hidden py-0 lg:py-5 mobile:px-0 px-[45px]">
+      <section className="hero mobile:flex hidden py-0 lg:py-5">
         <div className="container gap-4 mx-auto grid grid-cols-4">
           <div className="contentOne h-[400px] customlg:col-span-1 customlg:grid hidden rounded-2xl">
             <div className="relative flex items-end p-[10px]">
